@@ -1,0 +1,16 @@
+package readCSV;
+
+public class ReadCSV {
+	
+	public void readCSVFile(){
+		
+		String csvFile = "./Data/csvInput.xml";
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

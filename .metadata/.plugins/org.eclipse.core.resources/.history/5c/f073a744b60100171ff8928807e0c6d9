@@ -1,0 +1,17 @@
+package readCSV;
+
+public class CheckClass {
+
+	public static void main(String[] args) {
+		String dels = "-, 0123456789(*&^%$#@!_)";
+		String specs = "[" + dels + "]+";
+		String letts = "[^" + dels + "]+";
+		String text = "one, two - three! four";
+		String[] words = text.split( specs );
+		String[] delim = text.split( letts );
+		
+		System.out.println(words + "\n" + delim);
+
+	}
+
+}

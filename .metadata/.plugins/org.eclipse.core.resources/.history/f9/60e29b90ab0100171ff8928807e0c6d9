@@ -1,0 +1,18 @@
+package readCSV;
+
+public class ReadCSV {
+	
+	public void readCSVFile(){
+		
+		String csvFile = "./Data/csvInput.csv";
+		
+		File csv = new File (csvFile)
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

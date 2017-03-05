@@ -1,0 +1,77 @@
+package readCSV;
+
+import java.io.BufferedReader;
+import java.io.File;
+//import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ReadCSV {
+
+	@SuppressWarnings("unused")
+	public void readCSVFile() throws IOException {
+
+		String csvFile = "./Data/csvInput.csv";
+
+		String delimiter = ",";
+
+		String[] inputLine;
+
+		String inputline;
+
+		File csv = new File(csvFile);
+
+		if (csv.exists()) {
+
+			@SuppressWarnings("resource")
+			FileReader csvReader = new FileReader(csv);
+
+			//@SuppressWarnings("resource")
+			// BufferedReader csvBfReader = new BufferedReader(csvReader);
+
+			@SuppressWarnings("resource")
+			Scanner csvScanner = new Scanner(new File(csvFile));
+
+			// long lineCount = csvBfReader.lines().count();
+
+			//inputline = csvBfReader.readLine();
+
+			while (csvScanner.hasNextLine()){
+				
+				int i = 0;
+				
+				while (csvScanner.next()!=null){
+					
+					inputLine = csvScanner.nextLine().split(delimiter);
+					
+					System.out.println("i = "+ i + "\t" + inputLine[i]);
+					
+					i++;
+				}
+			}
+			
+			
+
+				
+				
+			}
+
+		 else {
+
+			System.out.println("File doesn't exist");
+		}
+	}
+
+
+	public static void main(String[] args) throws IOException {
+
+		ReadCSV rc = new ReadCSV();
+
+		rc.readCSVFile();
+
+	}
+
+}

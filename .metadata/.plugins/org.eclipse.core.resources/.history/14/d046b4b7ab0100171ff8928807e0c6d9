@@ -1,0 +1,30 @@
+package readCSV;
+
+import java.io.File;
+
+public class ReadCSV {
+	
+	public void readCSVFile(){
+		
+		String csvFile = "./Data/csvInput.csv";
+		
+		
+		
+		File csv = new File (csvFile);
+		
+		if (csv.exists()){
+			
+			
+		}
+		else{
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
