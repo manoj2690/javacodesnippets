@@ -23,17 +23,15 @@ public class ReadCSV {
 
 		String inputLine;
 
-		String inputline;
-
 		File csv = new File(csvFile);
 
 		if (csv.exists()) {
 
-			@SuppressWarnings("resource")
-			FileReader csvReader = new FileReader(csv);
+			//@SuppressWarnings("resource")
+			//FileReader csvReader = new FileReader(csv);
 
 			@SuppressWarnings("resource")
-			Scanner csvScanner = new Scanner(new File(csvFile));
+			Scanner csvScanner = new Scanner(csv);
 
 			while (csvScanner.hasNextLine()) {
 
