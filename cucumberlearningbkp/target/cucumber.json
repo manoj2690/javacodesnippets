@@ -1,0 +1,118 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "test scenario1",
+        "description": "",
+        "id": "test-scenario-hooks-with-before-and-after-methods;test-scenario1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 87899987,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "provide some prereq",
+            "match": {
+              "location": "CucoOptionsTest1.provide_some_prereq()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "execute some condition",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verify result is success",
+            "match": {
+              "location": "CucoOptionsTest1.verify_result_is_success()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@scenario1"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "test scenario2",
+        "description": "",
+        "id": "test-scenario-hooks-with-before-and-after-methods;test-scenario2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 145676,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "give some prereq",
+            "match": {
+              "location": "CucoOptionsTest1.give_some_prereq()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72175,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "execute any condition",
+            "match": {
+              "location": "CucoOptionsTest1.execute_any_condition()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 101973,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "check result",
+            "match": {
+              "location": "CucoOptionsTest1.check_result()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@scenario2"
+          }
+        ]
+      }
+    ],
+    "name": "test scenario hooks with before and after methods",
+    "description": "",
+    "id": "test-scenario-hooks-with-before-and-after-methods",
+    "keyword": "Feature",
+    "uri": "cucumberoptions.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      }
+    ]
+  }
+]

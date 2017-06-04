@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.08822">
+<testcase classname="test scenario hooks with before and after methods" name="test scenario1" time="0.0879">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given provide some prereq...................................................passed
+When execute some condition.................................................undefined
+Then verify result is success...............................................skipped
+]]></failure>
+</testcase>
+<testcase classname="test scenario hooks with before and after methods" name="test scenario2" time="0.00032">
+<system-out><![CDATA[Given give some prereq......................................................passed
+When execute any condition..................................................passed
+Then check result...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
